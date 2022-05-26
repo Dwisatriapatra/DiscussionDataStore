@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".fragment.ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="PROFILE"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:id="@+id/textview_profile"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:hint="username"
+            android:inputType="text"
+            android:background="@drawable/custom_background_edit_text"
+            android:padding="8dp"
+            android:layout_below="@id/textview_profile"
+            android:id="@+id/profile_username"
+            android:importantForAutofill="no"
+            android:layout_marginBottom="5dp"
+            tools:ignore="TextFields" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:hint="password"
+            android:background="@drawable/custom_background_edit_text"
+            android:padding="8dp"
+            android:inputType="text"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/profile_username"
+            android:id="@+id/profile_password"
+            android:importantForAutofill="no"
+            tools:ignore="TextFields" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOG OUT"
+            android:layout_below="@id/profile_password"
+            android:id="@+id/button_logout"
+            android:background="@drawable/custom_background_edit_text"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</ScrollView>
